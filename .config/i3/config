@@ -59,13 +59,12 @@ floating_modifier $mod
 set $myTerm gnome-terminal
 bindsym $mod+Return exec $myTerm
 
-# launch config file  
-bindsym $mod+y exec $myTerm -e vim ~/.config/i3/config
-
 # Start Applications
 bindsym $mod+F1 exec firefox
-bindsym $mod+shift+F2 exec nautilus
-bindsym $mod+shift+F3 exec galculator
+bindsym $mod+shift+F1 exec nautilus
+bindsym $mod+shift+F2 exec galculator
+bindsym $mod+shift+F3 exec spotify
+bindsym $mod+shift+F4 exec libreoffice
 bindsym $mod+shift+F5 exec $myTerm -e ~/.kee/./KeePassXC-2.6.2-x86_64.AppImage
 
 #kill focused window
