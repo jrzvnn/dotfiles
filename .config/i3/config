@@ -38,9 +38,6 @@ exec --no-startup-id nm-applet
 #nitrogen wallpaper
 exec --no-startup-id nitrogen --restore
 
-#switching workspace animation
-exec compton
-
 #screen tearing
 exec compton --backend glx --vsync opengl-swc
 
