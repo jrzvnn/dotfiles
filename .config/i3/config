@@ -38,6 +38,9 @@ exec --no-startup-id nm-applet
 #nitrogen wallpaper
 exec --no-startup-id nitrogen --restore
 
+#switching workspace animation
+exec compton
+
 #screen tearing
 exec compton --backend glx --vsync opengl-swc
 
@@ -72,12 +75,6 @@ bindsym $mod+Shift+q kill
 
 #Screenshot
 bindsym Shift+Print exec gnome-screenshot
-
-set $bg-color 	         #2f343f
-set $inactive-bg-color   #2f343f
-set $text-color          #f3f4f5
-set $inactive-text-color #676E7D
-set $urgent-bg-color     #E53935
 
 # start rofi (a program launcher)
 bindsym Mod1+Return exec --no-startup-id rofi -show run
