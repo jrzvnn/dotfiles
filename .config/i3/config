@@ -59,10 +59,14 @@ floating_modifier $mod
 set $myTerm gnome-terminal
 bindsym $mod+Return exec $myTerm
 
-# Start Applications
-bindsym $mod+F1 exec firefox
-bindsym $mod+shift+F1 exec nautilus
-bindsym $mod+shift+F2 exec galculator
+# Launch Utilities 
+bindsym $mod+Home exec $myTerm -e htop
+bindsym $mod+End  exec $myTerm -e ranger
+
+# Launch Applications
+bindsym $mod+F1 exec firefox 
+bindsym $mod+shift+F1 exec nautilus bindsym
+bindysm $mod+shift+F2 exec galculator
 bindsym $mod+shift+F3 exec spotify
 bindsym $mod+shift+F4 exec libreoffice
 bindsym $mod+shift+F5 exec $myTerm -e ~/.kee/./KeePassXC-2.6.2-x86_64.AppImage
