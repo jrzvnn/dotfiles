@@ -172,6 +172,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 # open applications in floating mode
 for_window [class="Galculator"] floating enable border pixel 2
 for_window [class="Nautilus"] floating enable border pixel 2
+for_window [class="Keepassxc"] floating enable border pixel 2
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
