@@ -67,8 +67,8 @@ bindsym $mod+End  exec $myTerm -e ranger
 bindsym $mod+shift+F1 exec firefox 
 bindsym $mod+shift+F2 exec nautilus 
 bindsym $mod+shift+F3 exec spotify
-bindsym $mod+shift+F4 exec $myTerm -e ~/.kee/./KeePassXC-2.6.2-x86_64.AppImage
-bindsym $mod+shift+F5 exec $myTerm -e vim /home/joriz/.config/i3/config
+bindsym $mod+shift+F4 exec $myTerm -e ~/Applications/./kdenlive-20.12.0-x86_64_aeaadecb58839b1ac4d19db7290cb705.appimage
+bindsym $mod+shift+F5 exec $myTerm -e ~/Applications/./KeePassXC-2.6.2-x86_64_423fde951a5861ab7dc535d248bd5f3b.AppImage
 
 #kill focused window
 bindsym $mod+Shift+q kill
@@ -172,7 +172,8 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 # open applications in floating mode
 for_window [class="Galculator"] floating enable border pixel 2
 for_window [class="Nautilus"] floating enable border pixel 2
-for_window [class="Keepassxc"] floating enable border pixel 2
+for_window [class="KeePassXC"] floating enable border pixel 2
+for_window [class="kdenlive"] floating enable border pixel 2
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
