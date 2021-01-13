@@ -227,7 +227,7 @@ bar {
     font pango: Inconsolata 8
     status_command ~/.config/bumblebee-status/bumblebee-status \
     -t iceberg-rainbow \
-    -m spotify getcrypto cpu memory date time pomodoro battery \
+    -m cpu memory date time pomodoro battery \
     
     
     colors {
