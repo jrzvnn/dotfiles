@@ -226,8 +226,11 @@ bar {
     #status_command i3status
     font pango: Inconsolata 8
     status_command ~/.config/bumblebee-status/bumblebee-status \
-    -t iceberg-rainbow \
-    -m cpu memory date time pomodoro battery \
+    -t gruvbox \
+    -m getcrypto nic cpu memory date time pomodoro battery \
+    -p nic.exclude=enx8cec4b30ac5a,lo,docker0,ens4u1u2,eth0  nic.format="{ip} {ssid}" \
+       datetime.format="%a %d %b %Y | %H:%M" \
+
     
     
     colors {
@@ -245,9 +248,9 @@ bar {
 }
 
 #i3-gaps
-for_window [class=".*"] border pixel 2 #*
-gaps inner 6
-gaps outer 4
+for_window [class=".*"] border pixel 1 #*
+#gaps inner 6
+#gaps outer 4
 
 
 
