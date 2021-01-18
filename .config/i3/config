@@ -175,6 +175,11 @@ for_window [class="Nautilus"] floating enable border pixel 2
 for_window [class="KeePassXC"] floating enable border pixel 2
 for_window [class="kdenlive"] floating enable border pixel 2
 
+# Open applications on specific workspaces
+assign [class="Firefox"] $ws2
+assign [class="Nautilus"] $ws3
+
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -227,10 +232,10 @@ bar {
     font pango: Inconsolata 8
     status_command ~/.config/bumblebee-status/bumblebee-status \
     -t gruvbox \
-    -m getcrypto nic cpu memory date time pomodoro battery \
-    -p nic.exclude=enx8cec4b30ac5a,lo,docker0,ens4u1u2,eth0  nic.format="{ip} {ssid}" \
+    -m getcrypto nic cpu memory datetime pomodoro battery \
+    -p battery.warning battery.critical \
+       nic.exclude=enx8cec4b30ac5a,lo,docker0,ens4u1u2,eth0  nic.format="{ip} {ssid}" \
        datetime.format="%a %d %b %Y | %H:%M" \
-
     
     
     colors {
