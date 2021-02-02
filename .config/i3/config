@@ -67,7 +67,7 @@ bindsym $mod+End  exec $myTerm -e ranger
 bindsym $mod+Shift+F1 exec firefox 
 bindsym $mod+Shift+F2 exec nautilus 
 bindsym $mod+Shift+F3 exec geany
-bindsym $mod+Shift+F4 exec $myTerm -e ~/Applications/./kdenlive-20.12.0-x86_64_aeaadecb58839b1ac4d19db7290cb705.appimage
+bindsym $mod+Shift+F4 exec $myTerm -e ~/Applications/./kdenlive-20.12.1b-x86_64_132739f0db9511680025b09e213a9b27.appimage
 bindsym $mod+Shift+F5 exec $myTerm -e ~/Applications/./KeePassXC-2.6.2-x86_64_423fde951a5861ab7dc535d248bd5f3b.AppImage
 
 #kill focused window
