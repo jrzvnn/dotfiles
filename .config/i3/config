@@ -34,6 +34,9 @@ bindsym $mod+Shift+x exec i3lock -i /home/joriz/Downloads/27298617-low-poly-wall
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+#Low Battery Alert
+exec cbatticon
+
 #nitrogen wallpaper
 exec --no-startup-id nitrogen --restore
 
