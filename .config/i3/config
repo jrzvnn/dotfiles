@@ -237,7 +237,7 @@ bar {
     font pango: Inconsolata 8
     status_command ~/.config/bumblebee-status/bumblebee-status \
     -t gruvbox \
-    -m getcrypto nic cpu memory datetime pomodoro battery \
+    -m getcrypto nic cpu memory datetime battery \
     -p battery.warning="30" battery.critical="40" \
        nic.exclude=enx8cec4b30ac5a,lo,docker0,ens4u1u2,eth0  nic.format="{ip} {ssid}" \
        datetime.format="%a %d %b %Y | %H:%M" \
