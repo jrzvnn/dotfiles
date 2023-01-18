@@ -1,4 +1,5 @@
 # Dotfiles
+### dotfiles are what most Linux enthusiasts call configuration files.
 
 ![preview](./.screenshots/Screenshot%20from%202021-01-28%2021-09-34.png)
 
