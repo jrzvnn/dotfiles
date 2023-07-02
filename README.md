@@ -14,7 +14,7 @@ This repository contains configuration files for various tools and applications 
 * `neofetch`: configuration file for the Neofetch system information tool.
 * `rofi`: configuration file for the Rofi application launcher and window switcher.
 
-## File StructureDotfiles
+## File Structure
 ```bash
 ├── .config
 │   ├── i3
