@@ -15,6 +15,7 @@ This repository contains configuration files for various tools and applications 
 * `rofi`: configuration file for the Rofi application launcher and window switcher.
 
 ## File StructureDotfiles
+```bash
 ├── .config
 │   ├── i3
 │   │   └── config
@@ -25,7 +26,7 @@ This repository contains configuration files for various tools and applications 
 ├── .bashrc
 ├── .vimrc
 └── .zshrc
-
+```
 ## Usage
 
 To use these dotfiles on your own system, simply clone this repository and move the configuration files to the appropriate locations in your home directory. For example, to use the `.bashrc` file, copy it to `~/.bashrc`.
