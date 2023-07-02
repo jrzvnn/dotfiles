@@ -10,10 +10,21 @@ This repository contains configuration files for various tools and applications 
 ## Contents
 * `.bashrc`: configuration file for the Bash shell, which is the default shell on most Linux systems.
 * `.vimrc`: configuration file for the Vim text editor.
-### `.config` Folder
 * `i3`: configuration files for the i3 window manager, which is a tiling window manager for Linux.
 * `neofetch`: configuration file for the Neofetch system information tool.
 * `rofi`: configuration file for the Rofi application launcher and window switcher.
+
+## File StructureDotfiles
+├── .config
+│   ├── i3
+│   │   └── config
+│   ├── neofetch
+│   │   └── config.conf
+│   └── rofi
+│       └── config
+├── .bashrc
+├── .vimrc
+└── .zshrc
 
 ## Usage
 
