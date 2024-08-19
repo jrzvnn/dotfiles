@@ -1,0 +1,121 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `zed: Open Default Settings` command
+// from the command palette
+{
+  "language_models": {
+    "openai": {
+      "version": "1"
+    }
+  },
+  "assistant": {
+    "default_model": {
+      "provider": "ollama",
+      "model": "deepseek-coder:1.3b"
+    },
+    "version": "2",
+    "provider": null
+  },
+  "telemetry": {
+    "metrics": true
+  },
+  "features": {
+    "inline_completion_provider": "supermaven"
+  },
+  "language_servers": ["vtsls", "typescript-language-server", "eslint"],
+  "language_server_options": {
+    "vtsls": {
+      "language_ids": [
+        "typescript",
+        "javascript",
+        "typescriptreact",
+        "javascriptreact"
+      ]
+    },
+    "typescript-language-server": {
+      "language_ids": [
+        "typescript",
+        "javascript",
+        "typescriptreact",
+        "javascriptreact"
+      ],
+      "initialization_options": {
+        "preferences": {
+          "includeInlayParameterNameHints": "all",
+          "includeInlayParameterNameHintsWhenArgumentMatchesName": true,
+          "includeInlayFunctionParameterTypeHints": true,
+          "includeInlayVariableTypeHints": true,
+          "includeInlayVariableTypeHintsWhenTypeMatchesName": false,
+          "includeInlayPropertyDeclarationTypeHints": true,
+          "includeInlayFunctionLikeReturnTypeHints": true,
+          "includeInlayEnumMemberValueHints": true
+        }
+      }
+    },
+    "eslint": {
+      "language_ids": [
+        "typescript",
+        "javascript",
+        "typescriptreact",
+        "javascriptreact"
+      ],
+      "initialization_options": {
+        "run_formatter": true
+      }
+    }
+  },
+  "languages": {
+    "TypeScript": {
+      "formatter": "prettier",
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      },
+      "format_on_save": "on"
+    },
+    "TSX": {
+      "formatter": "prettier",
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      },
+      "format_on_save": "on"
+    },
+    "JavaScript": {
+      "formatter": "prettier",
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      },
+      "format_on_save": "on"
+    }
+  },
+  "formatter": {
+    "code_actions": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "relative_line_numbers": true,
+  "theme": "One Dark Pro",
+  "buffer_font_size": 15,
+  "buffer_font_family": "FuraCode NF",
+  "vim_mode": true,
+  "format_on_save": "on",
+  "scrollbar": {
+    "show": "never"
+  },
+  "indent_guides": {
+    "render": true,
+    "character": "│",
+    "skip_first_level": false
+  },
+  "project_panel": {
+    "file_icons": true
+  },
+  "vim": {
+    "use_multiline_registers": true,
+    "surround": true,
+    "sneak": true
+  }
+}
