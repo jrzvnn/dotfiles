@@ -5,6 +5,10 @@
 
 ![preview](./.screenshots/2021-01-11-232800_1366x768_scrot.png)
 
+![preview](./.screenshots/2021-01-28-210806_1366x768_scrot.png)
+
+![preview](./.screenshots/2024-08-19_18-54.png)
+
 This repository contains configuration files for various tools and applications that I use on my personal computer. These configuration files, also known as "dotfiles," are named with a leading . and are stored in the home directory (~/) of the user.
 
 ## Contents
@@ -17,12 +21,23 @@ This repository contains configuration files for various tools and applications 
 ## File Structure
 ```bash
 ├── .config
+│   ├── alacritty
+│   │   └── alacritty.toml
 │   ├── i3
 │   │   └── config
+│   ├── lvim
+│   │   ├── config.lua
+│   │   └── lazy-lock.json
 │   ├── neofetch
 │   │   └── config.conf
-│   └── rofi
-│       └── config
+│   ├── rofi
+│   │   └── config
+│   ├── starship
+│   │   └── starship.toml
+│   └── zed
+│       ├── keymap.json
+│       ├── settings.json
+│       └── themes
 ├── .bashrc
 ├── .vimrc
 └── .zshrc
