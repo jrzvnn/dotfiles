@@ -1,9 +1,9 @@
 # Inserts a blank line between shell prompts
-format = """
-[┌─](bold white) $time
-[│](bold white)$all"""
-
-# add_newline = false
+# format = """
+# [┌─](bold white) $time
+# [│](bold white)$all"""
+#
+add_newline = true
 command_timeout = 1000
 
 # Replace the "❯" symbol in the prompt with "➜"
@@ -24,23 +24,19 @@ format = "took [$duration](bold yellow)"
 disabled = false
 
 [time]
-disabled = false
+disabled = true
 use_12hr = true
 format = "[$time](bold yellow)"
 
 [aws]
-symbol = "  "
-style = "208"
-
-[conda]
-symbol = " "
-
-[dart]
-symbol = " "
+symbol = "☁️ "
 
 [directory]
+format = '[$path]($style)[$read_only]($read_only_style) '
 read_only = " "
-style = "11"
+style = "207"
+truncation_length = 3
+home_symbol = "~"
 
 [directory.substitutions]
 "com~apple~CloudDocs" = "/iCloud"
@@ -55,59 +51,60 @@ symbol = " "
 symbol = " "
 
 [git_branch]
-symbol = " "
+symbol = "🌿 "
+style = "10 bold"
+
+[git_status]
+conflicted = "⚔️ "
+ahead = "🏎️ 💨 ×${count} "
+behind = "🐢 ×${count} "
+diverged = "🔱 🏎️ 💨 ×${ahead_count} 🐢 ×${behind_count} "
+untracked = "🛤️  ${count} "
+stashed = "📦 "
+modified = "📝 ×${count} "
+staged = "🗃️ ×${count} "
+renamed = "📛 ×${count} "
+deleted = "🗑️ ×${count} "
+style = "bright-white"
+format = "$all_status$ahead_behind"
+
+[git_commit]
+commit_hash_length = 8
+style = "bold white"
+tag_symbol = '🔖 '
+disabled = false
+
+[c]
+symbol = "💻 "
+detect_extensions = ["c", "h", "cpp"]
 
 [golang]
-symbol = " "
+symbol = "🐹 "
 
-[hg_branch]
-symbol = " "
+[helm]
+symbol = "⎈ "
 
 [java]
-symbol = " "
+symbol = "☕ "
 
-[julia]
-symbol = " "
-
-[memory_usage]
-symbol = " "
-
-[nim]
-symbol = " "
+[lua]
+symbol = "🌙 "
 
 [nodejs]
-style = "34"
-
-[nix_shell]
-symbol = " "
-
-[package]
-symbol = " "
-
-[perl]
-symbol = " "
+style = "📦 "
 
 [php]
-symbol = " "
+symbol = "🐘 "
 
 [python]
-symbol = " "
-style = "blue"
+symbol = "🐍 "
+style = "12"
 
 [ruby]
-symbol = " "
+symbol = "💎 "
 
 [rust]
-symbol = " "
+symbol = "🦀 "
 
-[scala]
-symbol = " "
-
-[shlvl]
-symbol = " "
-
-[swift]
-symbol = "ﯣ "
-
-
-
+[terraform]
+symbol = "🏗️ "
